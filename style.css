@@ -60,7 +60,7 @@ body {
   display: flex;
   flex-direction: row;
   width: 100%;
-  padding: 4rem 0 0 0;
+  padding: 4rem 0 4rem 0;
 }
 
 .solutions-wrapper {
@@ -172,6 +172,7 @@ body {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
   gap: 1.2rem;
+  row-gap: 2rem;
 }
 
 .brand-grid-container .grid-item {
