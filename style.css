@@ -32,7 +32,7 @@ body {
   width: 600px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1220px) {
   .banner-content {
     width: 900px;
   }
@@ -84,7 +84,7 @@ body {
   width: 600px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1220px) {
   .solutions-content {
     width: 450px;
   }
@@ -207,7 +207,7 @@ body {
   border: solid var(--primary-color) 2px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1220px) {
   .brand-grid-container {
     width: 900px;
     grid-template-columns: auto auto auto auto;
