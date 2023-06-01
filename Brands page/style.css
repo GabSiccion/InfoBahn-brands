@@ -1,12 +1,7 @@
-:root {
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-  --primary-color: #12254e;
-  --secondary-color: #696969;
-}
-
 body {
   margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .banner-container {
