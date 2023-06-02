@@ -32,7 +32,7 @@ body {
 }
 
 .banner {
-  background-image: url("./assets/Productsandsolution_img_d01.jpg");
+  background-image: url("./assets/banner-background.jpg");
   background-size: cover;
   background-position-x: right;
   padding: 4rem 0rem 4rem 0rem;
@@ -44,25 +44,30 @@ body {
   gap: 1rem;
 }
 
-.right-container img {
+.left-container img {
   height: auto;
   width: 100%;
 }
 
-.left-container {
+.right-container {
   display: flex;
   flex-direction: column;
   vertical-align: middle;
   justify-content: center;
-  padding-right: 3rem;
+  padding-left: 3rem;
 }
 
-.left-container h1 {
+.right-container h1 {
+  font-weight: 700;
+  line-height: 42px;
+  font-size: 35px;
   color: #091d46;
 }
 
-.left-container p {
+.right-container p {
   color: #585858;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 @media only screen and (max-width: 992px) {
@@ -74,8 +79,8 @@ body {
     gap: 1rem;
   }
 
-  .left-container {
-    padding-right: 0rem;
+  .right-container {
+    padding-left: 0rem;
   }
 }
 
@@ -103,8 +108,23 @@ body {
 }
 
 .content-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   margin-bottom: 60px;
+}
+
+.content-header .header {
+  font-size: 35px;
+  line-height: 42px;
+  color: #091d46;
+}
+
+.content-header .text {
+  max-width: 600px;
+  line-height: 24px;
+  color: #585858;
 }
 
 .grid-cards-container {
@@ -179,6 +199,11 @@ body {
   align-items: center;
   justify-items: center;
   justify-content: space-between;
+}
+
+.card-sub-title {
+  color: #31559e;
+  font-weight: 700;
 }
 
 .card-text {

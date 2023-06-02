@@ -8,6 +8,18 @@ body {
   margin: 0px;
 }
 
+.line-height-30 {
+  line-height: 30px;
+  color: #585858;
+  font-size: 20px;
+}
+
+.line-height-30-header {
+  font-size: 40px;
+  font-weight: 700;
+  color: #091d46;
+}
+
 .content-container {
   max-width: 1200px;
   padding-left: 1rem;
@@ -31,67 +43,44 @@ body {
 }
 
 .banner {
-  background-image: url("./assets/Productsandsolution_img_d01.jpg");
+  background-image: url("./assets/banner-background.jpg");
   background-size: cover;
   background-position-x: right;
   padding: 4rem 0rem 4rem 0rem;
 }
 
-.grid-border-bottom {
-  position: relative;
-  top: 60px;
-  border-bottom: 2px solid rgba(9, 29, 70, 0.1) !important;
+.grid-cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
 }
 
-.grid-buttons-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
-}
-
-.grid-buttons-container button {
-  border: none;
-  text-align: start;
-  padding: 0.8rem 2rem;
-  display: grid;
-  align-items: center;
-  grid-template-columns: 4fr 1.5fr;
-  gap: 1rem;
-  color: white;
-  background: #091d46;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.grid-card {
+  border: 1px solid rgba(9, 29, 70, 0.1);
   border-radius: 10px;
+  padding: 50px;
 }
 
-.grid-buttons-container button:hover {
-  background-color: #cce2fd;
-}
-
-.grid-buttons-container button:hover > p,
-.grid-buttons-container button:hover > svg > path {
+.grid-card .header {
   color: #091d46;
-  fill: #091d46;
-}
-
-.grid-buttons-container button > p {
+  font-size: 25px;
   font-weight: 700;
-  color: white;
-  font-size: 18px;
 }
 
-.grid-buttons-container button > svg {
-  justify-self: end;
+.grid-card .text {
+  line-height: 25px;
+  color: #585858;
 }
 
 @media only screen and (max-width: 992px) {
-  .grid-buttons-container {
+  .grid-cards-container {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
 }
 
 @media only screen and (max-width: 576px) {
-  .grid-buttons-container {
+  .grid-cards-container {
     grid-template-columns: 1fr;
   }
 }
@@ -103,10 +92,21 @@ body {
   align-items: center;
 }
 
-.text-content-wrapper > h1 {
-  margin-top: 0;
+.text-content-wrapper-background {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: url("./assets/background.png");
+  background-position: center;
+  background-size: cover;
+}
+.text-content-wrapper > p {
+  max-width: 700px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-.text-content-wrapper > p {
-  max-width: 70%;
+.text-content-wrapper .header {
+  color: white;
+  font-size: 35px;
+  font-weight: 700;
 }
