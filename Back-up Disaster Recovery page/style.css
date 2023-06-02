@@ -143,27 +143,26 @@ body {
   background-color: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
+  padding: 55px 30px 55px;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: #cce2fd;
 }
 
 .card-icon-container {
+  margin-bottom: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 170px;
-}
-
-.card-title-container {
-  padding-left: 24px;
-  padding-right: 24px;
-  background: #091d46;
-  height: 77px;
 }
 
 .card-title {
   margin: 0px;
   height: inherit;
   text-align: center;
-  color: white;
+  color: #091d46;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -173,7 +172,6 @@ body {
 }
 
 .card-text-container {
-  padding: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -188,22 +186,6 @@ body {
   line-height: 19px;
 }
 
-.card-read-more-button {
-  margin-top: 1rem;
-  font-size: 16px;
-  background: none;
-  padding: 10px 14px;
-  border: 1px solid #091d46;
-  border-radius: 7px;
-}
-
-.card-read-more-button:hover {
-  transition: 200ms;
-  color: white;
-  border: 1px solid #de3228;
-  background-color: #de3228;
-}
-
 .slider-container {
   display: flex;
   flex-direction: row;
@@ -216,7 +198,7 @@ body {
 }
 
 .brands-slider {
-  width: 900px;
+  width: 1050px;
 }
 
 .slide {
@@ -248,9 +230,26 @@ body {
   margin: 20px 0;
 }
 
+.view-all-button {
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 16px;
+  background: none;
+  padding: 14px 38px;
+  border: 1px solid #091d46;
+  border-radius: 7px;
+}
+
+.view-all-button:hover {
+  transition: 200ms;
+  color: white;
+  border: 1px solid #de3228;
+  background-color: #de3228;
+}
+
 @media only screen and (max-width: 1440px) {
   .brands-slider {
-    width: 860px;
+    width: 80vw;
   }
 }
 
@@ -259,7 +258,7 @@ body {
     width: 70vw;
   }
   .slide-image-container img {
-    height: 70px;
+    height: 25px;
   }
 }
 
@@ -268,6 +267,6 @@ body {
     width: 70vw;
   }
   .slide-image-container img {
-    height: 50px;
+    height: 20px;
   }
 }

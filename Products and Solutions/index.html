@@ -22,7 +22,26 @@
     />
   </head>
   <body>
-    <div class="products-and-solutions">
+    <div class="section banner">
+      <div class="content-container"></div>
+    </div>
+    <div class="section">
+      <div class="content-container left-right-container">
+        <div class="left-container">
+          <h1>Our Products and Solutions</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed
+            viverra ipsum nunc aliquet bibendum enim facilisis. In mollis nunc
+            sed id semper risus.
+          </p>
+        </div>
+        <div class="right-container">
+          <img src="./assets/Group 156.svg" alt="placeholder image" />
+        </div>
+      </div>
+    </div>
+    <div class="section products-and-solutions">
       <div class="content-container">
         <div class="content-header">
           <h1 class="header">Our Prodcuts and Solutions</h1>
@@ -209,33 +228,48 @@
         </div>
       </div>
     </div>
-    <div class="brands-we-carry-container">
-      <div class="content-container">
-        <div class="brands-slider">
-          <div class="slide">
-            <div class="slide-image-container">
-              <img src="./logos/image 26.svg" />
+    <div class="section">
+      <h1 class="brands-slider-header">Brands We Carry</h1>
+      <div class="brands-we-carry-container">
+        <div class="content-container slider-container">
+          <div class="slider-left-arrow">
+            <img
+              src="./assets/Productsandsolution_icon_13.svg"
+              alt="left arrow"
+            />
+          </div>
+          <div class="brands-slider">
+            <div class="slide">
+              <div class="slide-image-container">
+                <img src="./logos/image 26.svg" />
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-image-container">
+                <img src="./logos/image 27.svg" />
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-image-container">
+                <img src="./logos/image 28.svg" />
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-image-container">
+                <img src="./logos/image 29.svg" />
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-image-container">
+                <img src="./logos/image 30.svg" />
+              </div>
             </div>
           </div>
-          <div class="slide">
-            <div class="slide-image-container">
-              <img src="./logos/image 27.svg" />
-            </div>
-          </div>
-          <div class="slide">
-            <div class="slide-image-container">
-              <img src="./logos/image 28.svg" />
-            </div>
-          </div>
-          <div class="slide">
-            <div class="slide-image-container">
-              <img src="./logos/image 29.svg" />
-            </div>
-          </div>
-          <div class="slide">
-            <div class="slide-image-container">
-              <img src="./logos/image 30.svg" />
-            </div>
+          <div class="slider-right-arrow">
+            <img
+              src="./assets/Productsandsolution_icon_14.svg"
+              alt="right arrow"
+            />
           </div>
         </div>
       </div>
@@ -255,7 +289,9 @@
 
     <script>
       $(".brands-slider").slick({
-        arrows: true,
+        prevArrow: $(".slider-left-arrow"),
+        nextArrow: $(".slider-right-arrow"),
+        mobileFirst: true,
         centerMode: true,
         variableWidth: true,
         speed: 300,
